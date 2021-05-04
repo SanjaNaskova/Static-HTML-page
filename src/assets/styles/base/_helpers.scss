@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// Helpers
+// -----------------------------------------------------------------------------
+
+// example:
+// https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_helpers.scss
+
+.btn{
+   color: #fff;
+   border-radius: 5px;
+   font-weight: 400;
+   border: none;
+   cursor: pointer;
+}
+
+.btn-sm{
+   padding: 10px 20px;
+}
+.btn-md{
+    padding: 14px 35px;
+    font-size: 20px;
+}
+
+.btn-primary{
+    background: #286A60;
+}
+
+.font-30{
+    font-size: 30px;
+}

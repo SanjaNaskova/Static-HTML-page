@@ -1,0 +1,183 @@
+.pricing{
+        padding: 30px 0;
+
+        .pricing-wrap{
+
+            h1{
+                text-align: center;
+            }
+
+                .pricing-container{
+                    display: flex;
+                    column-gap: 20px;
+                    padding: 30px;
+                    justify-content: center;
+
+                    .pricing-card{
+                             padding: 15px;
+                             border-radius: 9px;          
+
+                             .pricing-text-wrap{
+                                font-weight: 500;
+
+                                 .pricing-logo{
+
+                                img{
+                                    max-width: 40px;
+                                    margin-right: 10px;
+                                }
+
+                                h3{
+                                    display: inline-block;
+                                }
+                             }
+
+                                .pricing-header{
+                                     margin-bottom:35px;
+
+                                     .wrapper{
+                                         display: flex;
+                                         align-items: center;
+                                         justify-content: space-between;
+                                         
+                                          h2{
+                                          margin: 0;
+                                          font-size: 30px;
+                                          word-break: break-word;
+
+                                             .small{
+                                                font-size: 15px;
+                                               }
+
+                                             span{
+                                               margin-right: 6px;
+                                               }
+                                         }
+                                         .btnHide{
+                                             font-size: 30px;
+                                             background: none;
+                                             cursor: pointer;
+                                             border: none;
+                                         }
+                                     } 
+                                 }
+
+                                .pricing-btn{
+                                    
+                                    button{
+                                        border-radius: 4px;
+                                        width: 100%;
+                                        padding: 20px;
+                                        letter-spacing: 3px;
+                                        cursor: pointer;
+                                         }     
+                                     }                                                             
+                             }
+
+                             &:nth-child(1){
+                                 .pricing-logo{
+                                     h3{
+                                         color: $grey;
+                                     }
+                                 }
+                                 .btnHide{
+                                     color: $grey;
+
+                                 }
+                                   border: 2px solid  $grey;
+                                span{
+                                    color: $grey;
+                                }
+                               .pricing-btn{
+                                  text-align: center;
+                                  button{
+                                       border: 3px solid  $grey;
+                                       color:  #fff;
+                                       background-color: $grey;
+                                  }
+                                }
+                    }
+                       &:nth-child(2){
+                           .pricing-logo{
+                                     h3{
+                                         color: $wineRed;
+                                     }
+                                 }
+                                  .btnHide{
+                                     color: $grassGreen;
+                                 }
+                           border: 2px solid $wineRed;
+                           .pricing-txt-content{
+                               span{
+                                    color: $grassGreen;
+                               }
+                           }                           
+                               .pricing-btn{
+                                  text-align: center;
+                                  button{
+                                       border: 3px solid $grassGreen;
+                                       color: #fff;
+                                       background-color:$grassGreen;
+                                  }
+                                }
+                    }
+                      &:nth-child(3){ 
+                          border: 2px solid #000;      
+
+                               .pricing-btn{
+                                  text-align: center;
+                                  
+                                  button{
+                                       border: 3px solid #000;
+                                       color: #fff;
+                                       background-color: #000;
+                                  }
+                                }
+                    }
+                    }
+
+
+
+                     @media screen and (max-width:850px){
+                             display: flex;
+                             flex-direction: column;
+
+                             .pricing-card{
+                                 margin-bottom: 30px;
+
+                                 .pricing-txt-content{
+                                     height: 0;
+                                     visibility: hidden;
+
+                                     &.show{
+                                         height: 100%;
+                                         visibility: visible;
+                                     }
+                                 }
+                                        .btnHide{
+                                             display: block;
+                                         } 
+                             }                        
+                     }
+                     @media screen and(min-width:850px){  
+                             .pricing-card{
+                             height: -webkit-fit-content;
+                             height: -moz-fit-content;
+                             height: fit-content;   
+                             }
+
+                            .btnHide{
+                            display: none;
+                        }
+                     }
+
+                    @media screen and(min-width:1024px){
+                        .pricing-card{
+                             max-width: 350px;                      
+                        }
+                    }
+
+                }
+
+        }
+    }
